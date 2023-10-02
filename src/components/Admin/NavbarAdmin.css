@@ -1,0 +1,43 @@
+.navbar-admin {
+    display: flex;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+.right-panel {
+    margin-left: auto;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.right-panel a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.left-panel {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.left-panel a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.uploadForm input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+.uploadForm input[type="submit"] {
+    background-color: rgb(0, 128, 167);
+    color: white;
+    font-weight: bolder;
+    padding: 14px 20px;
+    margin: 20px auto 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.terms {
+    margin-top: 150px;
+    text-align: left;
+    padding: 0 15%;
+}
+
+.terms h1 {
+    text-align: center;
+}
+
+.terms ul {
+    list-style: decimal;
+    padding: 0 3%;
+}
+
+@media only screen and (max-width: 800px) {
+    .terms {
+        margin-top: 110px;
+        padding: 0 8%;
+    }
+}

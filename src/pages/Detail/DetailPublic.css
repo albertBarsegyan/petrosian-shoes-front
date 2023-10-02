@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+.detail-item {
+    display: flex;
+    min-height: 80vh;
+}
+
+.detail-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+.gallery-cont {
+    margin-top: -100vh;
+    margin-left: 10%;
+}
+
+.gallery-thumb {
+    position: sticky;
+    left: 0;
+    top: 0;
+    margin-right: auto;
+    height: 100vh;
+}
+
+.thumb-wrapper {
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    top: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumb-wrapper a {
+    margin-top: -4px;
+}
+
+.item-thumb {
+    width: 10vw !important;
+    max-width: 75px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.detail-gallery img {
+    /* border: solid rgba(161, 161, 161, 0.1) 1px; */
+    left: 80px;
+    padding: 3px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.detail-info {
+    position: sticky;
+    top: 160px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.detail-info hr {
+    opacity: 0.2;
+}
+
+.item-img {
+    height: 100vh;
+}
+
+.detail-info .item-price {
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(20, 33, 51);
+    margin: 0;
+}
+
+.item-desc {
+    font-size: 23px;
+    margin: 5px 0 15px;
+    font-style: italic;
+    font-family: 'Cormorant Garamond';
+}
+
+.detail-info-cont {
+    position: relative;
+}
+
+.detail-info h1 {
+    margin-bottom: 0;
+}
+
+select {
+    appearance: unset;
+}
+
+.detail-list-user {
+    list-style: inside;
+}
+
+.detail-list-user li {
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-family: 'Overpass';
+}
+
+/* photo counter */
+
+.css-w6xjhe {
+    display: none;
+}
+
+.react-images__header_button--fullscreen .css-9s8aw7 {
+    display: none !important;
+}
+
+/* modals background */
+
+.ril__caption, .ril__toolbar {
+    background-color: transparent;
+}
+
+.ril__outer {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.css-16jr3vd {
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.ril__closeButton {
+    background: url(./close.png) center no-repeat;
+    background-size: contain;
+}
+
+.ril__navButtonPrev {
+    background: url(./back.png) center no-repeat;
+    background-size: contain;
+}
+
+.ril__navButtonNext {
+    background: url(./next.png) center no-repeat;
+    background-size: contain;
+}
+
+/* next button */
+
+.css-xfk84m, .css-1h82jk3 {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: rgba(0, 0, 0, 0.2) 1px solid !important;
+}
+
+.css-6b2qbc {
+    width: 100vw !important;
+}
+
+.css-xfk84m path, .css-1h82jk3 path {
+    fill: rgba(0, 0, 0, 0.808);
+    position: absolute;
+    z-index: 100000;
+}
+
+.css-xfk84m:hover, .css-1h82jk3:hover {
+    transform: scale(1.08);
+}
+
+/* x button */
+
+.css-m6j0xf {
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.css-m6j0xf:hover {
+    color: rgba(0, 0, 0, 1) !important;
+    transform: scale(1.08);
+}
+
+.detail-info .prices-cont-det {
+    display: flex;
+}
+
+.detail-info .prices-cont-det p {
+    margin-right: 15px;
+}
+
+.detail-info .old-p {
+    text-decoration: line-through;
+    font-weight: 100;
+}
+
+.containerZoom img {
+    transition: opacity .5s;
+    display: block;
+    width: initial;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.containerZoom {
+    cursor: crosshair !important;
+}
+
+.imageZoomCont {
+    width: 100vw;
+    z-index: -1;
+    background-color: white;
+}
+
+.op {
+    opacity: 0;
+}
+
+.detail-info .old-p {
+    text-decoration: line-through;
+    text-decoration-color: rgba(255, 0, 0, 0.815);
+    text-decoration-thickness: 2px;
+}
+
+.css-rd9bp {
+    transition: opacity .5s;
+    display: block;
+    width: initial;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.css-8wgz7g {
+    position: absolute !important;
+    z-index: 10000 !important;
+}
+
+.zoom-wrap {
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: crosshair !important;
+}
+
+/* .zoom-wrap img {
+    margin: 0 auto;
+} */
+
+@media only screen and (max-width: 860px) {
+    .cm-text-wrap {
+        width: 80%;
+        padding: 20px 10%;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .item-img {
+        height: initial;
+        width: 70vw;
+        margin-left: 10vw;
+    }
+    .detail-gallery {
+        width: 100vw;
+        padding-top: 0;
+        grid-template: 'gallery';
+        margin-top: 0;
+    }
+    .detail-info-cont {
+        margin: 120px 10% 0;
+        width: 100vw;
+        grid-template: 'info';
+        text-align: center;
+        justify-content: center;
+    }
+    .detail-item {
+        margin-top: 103px;
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-areas: 'gallery''info';
+    }
+    .detail-list-user {
+        text-align: left;
+    }
+    .btn-cart-inval, .btn-cart {
+        margin: 0 auto;
+    }
+    .zoomImg {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .detail-info-cont {
+        margin-left: 15% !important;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .detail-info-cont {
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 240px) {
+    .detail-info-cont {
+        margin-left: 0 !important;
+        padding-left: 5px;
+    }
+    .detail-info .prices-cont-det {
+        display: block;
+    }
+    .btn-cart {
+        width: initial;
+    }
+}
+
+.selectSize select {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.css-zjq1i3 {
+    max-height: 135vh !important;
+    margin-top: -12vh !important;
+}
+
+.selectSize .exists {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.disabled {
+    font-style: italic;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.invalid-size {
+    border: 1px solid rgba(255, 0, 0, 0.6) !important;
+}

@@ -1,0 +1,108 @@
+.empty-collection {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.collections {
+    padding-top: 95px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 5vw 20px;
+}
+
+.gallery img {
+    width: 30vw;
+}
+
+.gallery a {
+    margin: 0 25px 15px 25px;
+}
+
+footer {
+    margin-top: 0 !important;
+    min-height: 20vh;
+}
+
+.collection-cont, .loaderCont {
+    min-height: 80vh;
+    background-color: white;
+}
+
+.loaderCont {
+    text-align: center;
+    display: flex;
+}
+
+.prices-cont {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.collections .prices-cont p{
+    font-size: 16px;
+
+}
+.collections .prices-cont {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.collection-cont a {
+    text-decoration: none;
+    color: black;
+}
+
+.prices-cont p {
+    margin: 0 20px;
+}
+
+.newPrice {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    text-decoration-color: rgba(255, 0, 0, 0.815);
+    text-decoration-thickness: 2px;
+    font-size: 19px;
+    margin-top: 2px;
+}
+
+.currency {
+    margin-right: 10px;
+    font-weight: 100;
+}
+
+.item-name-coll {
+    text-align: center;
+}
+
+.currency-old {
+    margin-right: 0px !important;
+}
+
+@media only screen and (max-width: 1250px) {
+    .gallery {
+        grid-template-columns: auto auto;
+    }
+    .gallery img {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 821px) {
+    .gallery {
+        grid-template-columns: auto;
+    }
+    .gallery img {
+        width: 60vw
+    }
+}

@@ -1,0 +1,146 @@
+.footer {
+    background-color: #111111;
+    display: flex;
+    bottom: 0;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+.copyright {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px ;
+    padding-left: 20px;
+    display: flex;
+    background-color: #111111;
+}
+
+.copyright p {
+    font-size: 15px;
+    border-top: 1px solid #ffffff67;
+    
+    margin: 0;
+    margin-right: 20%;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright a {
+width: fit-content;
+font-size: 15px;
+}
+.privacy-terms-cont {
+    padding:0;
+    display: flex;
+    flex-direction: row;
+}
+.privacy-terms-cont a {
+    margin-right: 10px;
+    font-size: 12px;
+}
+footer .first-col {
+    padding: inherit 10% 0 7%;;
+}
+
+.footer-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+footer div {
+    padding: 50px 80px 0;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 17px;
+
+    color: white;
+}
+
+footer h1 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.social {
+    margin-left: auto;
+}
+
+.social-cont {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+}
+
+.social-cont img {
+    width: 40px;
+    margin-top: -5px;
+    margin-right: 20px;
+}
+
+.sec-col {
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer-menu {
+        flex-direction: column ;
+    }
+    .sec-col {
+        padding-top: 10px;
+    }
+    .social {
+        padding: 50px 10px;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .sec-col {
+        display: none;
+    }
+
+    .social {
+        padding-bottom: 0;
+    }
+
+    .first-col {
+        margin: 20px auto 0;
+        padding: 0;
+    }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+
+.copyright {
+    padding-top: 0;
+}
+
+.payment-logo {
+    padding-left: 0;
+    flex-direction: row;
+}
+
+.payment-logo img {
+    width: 42px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+}

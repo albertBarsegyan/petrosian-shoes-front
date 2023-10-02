@@ -1,0 +1,18 @@
+.containerZoom {
+    background-position: 50% 50%;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: zoom-in;
+    margin: 0
+}
+
+.containerZoom img {
+    transition: opacity .5s;
+    display: block;
+    width: 100%
+}
+
+.containerZoom.active img {
+    opacity: 0
+}

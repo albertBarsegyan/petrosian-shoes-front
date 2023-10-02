@@ -1,0 +1,337 @@
+.prenav {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 5px 5px 5px;
+    width: 100vw;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: initial;
+    box-shadow: 0 1px 3px #999;
+    position: fixed;
+    z-index: 1000000;
+    background-color: rgba(247, 247, 247, 0.9);
+    /* background-color: #f7f7f7e7; */
+    /* #f4f9ff */
+    transition: top 0.3s;
+    min-height: 37px;
+    padding: 16px 0;
+}
+
+.navHolder {
+    transition: top 0.3s;
+}
+
+.navbar-left, .navbar-right {
+    margin: auto 0;
+}
+
+.navbar-left {
+    padding-left: 20px;
+    display: flex;
+}
+
+.navbar-right {
+    padding-right: 20px;
+    display: flex;
+    margin-left: auto !important;
+}
+
+.navbar a, .navbarToggle a {
+    text-decoration: none;
+    margin: 0 40px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar a {
+    font-size: 18px;
+}
+
+.navbarToggle {
+    padding: 10px 0;
+}
+
+.navbarToggle a {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.navbar a:hover {
+    color: black;
+    font-weight: bolder;
+    font-size: 17.4px;
+}
+
+.navbar a:active {
+    color: black;
+}
+
+.navbar-right-holder {
+    margin: auto 0;
+}
+
+.logo {
+    width: 200px;
+    height: 40px;
+    margin: auto 0;
+}
+
+.logo-cont {
+    display: flex;
+    z-index: 10;
+    position: absolute;
+}
+
+.trolley {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin-right: 40px;
+}
+
+.cart-button-nav {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-items {
+    display: flex;
+    width: 100%;
+}
+
+.navbarToggle {
+    display: flex;
+    margin-top: 69px;
+    flex-direction: column;
+    background: white;
+    -webkit-box-shadow: 0 1px 10px #999;
+    box-shadow: 0 1px 10px #999;
+    text-align: center;
+}
+
+.navbarToggle a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .navbar a {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .navbar-left {
+        padding-left: 0px;
+    }
+    .navbar-right {
+        padding-right: 0;
+    }
+    .navbar a {
+        margin: 0 25px;
+    }
+    .trolley {
+        margin-right: 20px;
+    }
+    .man-nav-dropdown .drop-cont {
+        padding-left: 0 !important;
+    }
+    .woman-nav-dropdown .drop-cont {
+        padding-left: 85px !important;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        height: 38px;
+    }
+    .navbar-left, .navbar-right {
+        display: none;
+    }
+    .menuButton {
+        margin: auto !important;
+        right: 0;
+        top: -8px;
+    }
+    .cart-button-nav {
+        position: absolute;
+        left: 0;
+        margin-left: 15px;
+    }
+}
+
+.menuButton {
+    position: absolute;
+    margin-top: -500px;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
+    stroke-dasharray: 30 139;
+}
+
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+.navbarToggle a:hover {
+    background-color: rgb(223, 234, 247, 0.5);
+}
+
+.equalize {
+    height: 24px;
+    background-color: transparent !important;
+}
+
+.man-nav-dropdown, .woman-nav-dropdown {
+    display: none;
+    opacity: 0;
+    /* #f4f9ff */
+    z-index: 0;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    cursor: initial;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.man-nav-dropdown a, .woman-nav-dropdown a {
+    width: fit-content;
+    padding: 0 0 10px;
+    font-size: 16px !important;
+}
+
+/* .dropdown-man:hover>.man-nav-dropdown, .dropdown-woman:hover>.woman-nav-dropdown {
+    display: flex !important;
+    opacity: 1;
+} */
+
+.opened-drop {
+    display: flex !important;
+    opacity: 1;
+}
+
+.drop-cont {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247, 247, 247, 0.95);
+    width: 100%;
+    padding-top: 10px;
+}
+
+.drop-cont a {
+    font-size: 17px;
+}
+
+.woman-nav-dropdown .drop-cont {
+    padding-left: 139px;
+}
+
+.man-nav-dropdown .drop-cont {
+    padding-left: 20px;
+}
+
+.navbar a .drop-cont a {
+    font-size: 18px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin-bottom: 0px;
+    margin-top: 7px !important;
+}
+
+.arrow {
+    border: solid rgba(0, 0, 0, 0.65);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 6px;
+    margin-top: 4px;
+    position: absolute;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 825px) {
+    .logo {
+        width: 175px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .navbarToggle, .container-cart {
+        margin-top: 50px !important;
+    }
+    .trolley {
+        width: 23px;
+        height: 23px;
+        margin-top: -3px;
+    }
+    .menuButton svg {
+        width: 50px !important;
+        margin-top: 8px;
+    }
+    .navbar {
+        background-color: rgba(247, 247, 247, 0.95);
+        height: 20px !important;
+        min-height: 20px;
+    }
+    .logo {
+        width: 95px;
+        height: 21px;
+    }
+}

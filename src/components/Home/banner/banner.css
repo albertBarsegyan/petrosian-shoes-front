@@ -1,0 +1,101 @@
+.banner {
+    display: flex;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 25px 0 35px 25px;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+    color: white;
+}
+
+.button:hover, .footer a:hover {
+    color: white !important;
+    font-weight: bolder;
+}
+
+.popular-card:hover {
+    color: black !important;
+    font-weight: bolder;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+    text-align: center;
+}
+
+.col h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.col p {
+    font-size: 17px !important;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .col {
+        margin: 0 50px !important
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .col h1 {
+        font-size: 18px;
+    }
+    .col p {
+        font-size: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    /* .banner {
+        flex-direction: column;
+    }
+    .col-mid {
+        margin: 30px 0 !important;
+    } */
+    .col {
+        margin: 0 15px !important;
+    }
+    .col p {
+        font-size: 13px !important;
+    }
+}
+
+@media only screen and (max-width: 703px) {
+    /* .banner {
+        flex-direction: column;
+    } */
+    .col h1 {
+        font-size: 15px;
+    }
+    .col p {
+        font-size: 13px !important;
+    }
+}
+
+@media only screen and (max-width: 583px) {
+    .banner {
+        flex-direction: column;
+    }
+    .col h1 {
+        font-size: 20px;
+    }
+    .col p {
+        font-size: 18px !important;
+    }
+    .col-mid {
+        margin: 30px 0 !important;
+    }
+}

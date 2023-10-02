@@ -1,0 +1,80 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^4.16.13",
+    "axios": "^0.21.1",
+    "depcheck": "^1.4.2",
+    "flickity": "^2.2.2",
+    "formik": "^2.2.9",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-country-region-selector": "^3.1.0",
+    "react-dom": "^17.0.2",
+    "react-flickity-component": "^3.6.1",
+    "react-geocode": "^0.2.3",
+    "react-image-lightbox": "^5.1.4",
+    "react-images": "^1.2.0-beta.7",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "react-slick": "^0.28.1",
+    "react-tabs": "^3.2.2",
+    "react-toastify": "^8.0.3",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.0",
+    "validator": "^13.6.0",
+    "web-vitals": "^1.0.1",
+    "webpack": "^4.28.3",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "proxy": "http://localhost:5000/",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "8.0.5",
+    "brotli-gzip-webpack-plugin": "^0.5.0",
+    "html-webpack-plugin": "^4.0.0-alpha.2",
+    "prettier": "2.3.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorbaghramyan/shop_mern__.git"
+  },
+  "keywords": [
+    "Petrosianshoes.com"
+  ],
+  "author": " <gorbaghramyan@outlook.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gorbaghramyan/shop_mern__/issues"
+  },
+  "homepage": "https://petrosianshoes.com",
+  "description": ""
+}

@@ -1,0 +1,18 @@
+.footer  {
+    display: flex;
+    background-color: #f4f9ff;
+    padding: 30px;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+    text-align: center;
+}
+
+.col p {
+    font-size: 20px;
+    margin: 0;
+}

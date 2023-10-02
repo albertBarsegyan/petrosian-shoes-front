@@ -1,0 +1,191 @@
+.detail-admin {
+    margin: 0 20%;
+    padding: 20px 5%;
+}
+
+.detail-admin h1 {
+    text-align: center;
+}
+
+.detail-admin h1 a {
+    margin-left: 20px;
+}
+
+.detail-admin .input-field {
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-admin .input-field label {
+    margin: 10px 0;
+}
+
+.admin-edit-but-cont {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.detail-admin .admin-edit h1 {
+    display: inline-flex;
+    background-color: yellow;
+    margin: auto;
+}
+
+.sale-color {
+    color: red;
+}
+
+.admin-detail-img-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.img-ff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.admin-detail-img-cont .img-card {
+    margin-bottom: 10px;
+}
+
+.admin-edit-but-cont input {
+    margin-right: 50px;
+    font-size: 20px;
+    padding: 10px 50px;
+    background-color: rgb(94, 165, 94);
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px
+}
+
+.admin-edit-but-cont input:hover {
+    opacity: 0.8;
+}
+
+.admin-edit-but-cont button {
+    margin-right: 50px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(230, 53, 83);
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    color: white;
+}
+
+.admin-hr {
+    opacity: 0.7;
+    margin: 20px;
+}
+
+.column {
+    width: 100%;
+    flex-direction: column;
+}
+
+.column .input-field {
+    width: 100%;
+}
+
+.detail-admin .column input {
+    margin-right: 20px;
+}
+
+.detail-admin .detail-label {
+    width: 20%;
+    margin-top: 20px;
+}
+
+.detail-admin>p>span {
+    margin-right: 30px;
+}
+
+.admin-edit {
+    text-decoration: none;
+    color: black
+}
+
+.admin-edit img {
+    width: 50px;
+}
+
+.img-card {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 5px 15px;
+}
+
+.img-card input {
+    margin-left: 10px;
+}
+
+.img-card button {
+    margin: 0 auto;
+}
+
+.add-item-cont .row {
+    padding: 15px 0;
+}
+
+.add-item-cont .input-field input[type="submit"] {
+    background-color: rgb(3, 161, 37);
+}
+
+.input-field input[type="file"]:hover {
+    opacity: 0.8;
+}
+
+.input-field input[type="file"] {
+    background-color: rgb(0, 128, 167, 0.3);
+    font-weight: bolder;
+    padding: 14px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-field input[type="file"]::file-selector-button {
+    display: none !important;
+}
+
+.custom-file-input {
+    text-align: center;
+    justify-content: center;
+}
+
+.img-del {
+    width: 100px !important;
+    height: 100px !important;
+    margin: 0 auto;
+    display: block;
+}
+
+.img-del-wrap {
+    text-align: center;
+}
+
+.save-carousel-img-btn:hover {
+    opacity: 0.8 !important;
+}
+
+.save-carousel-img-btn {
+    width: 100px;
+    margin-left: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(21, 128, 0, 0.8);
+    cursor: pointer;
+}
+
+.detail-admin .input-field {
+    display: flex;
+    flex-direction: column;
+}
