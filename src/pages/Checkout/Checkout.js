@@ -13,13 +13,15 @@ import visa from './Visa.svg'
 import mastercard from './mastercard.svg'
 import './Checkout.css';
 
-export async function Checkout() {
+export function Checkout() {
   const {items, setItems} = useContext(CartContext);
   const {state} = useParams();
 
   const {priceI, setPriceI} = useContext(LocationContext);
   const {cityName, countryName} = useContext(LocationContext);
   const {request} = useHttp();
+  const [country, setCountry] = useState();
+  const [region, setRegion] = useState();
   let currency = '$';
   let Currency = '840';
 
@@ -49,8 +51,7 @@ export async function Checkout() {
       break;
   }
 
-  const [country, setCountry] = useState();
-  const [region, setRegion] = useState();
+  
   let Description = '';
   let lang = 'en';
 
@@ -157,6 +158,8 @@ export async function Checkout() {
     });
     Description = totalPrice + currency;
   };
+
+
 
   if (!items && state !== 'success') {
     return <Redirect to='/'/>
