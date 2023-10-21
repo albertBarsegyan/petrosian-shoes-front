@@ -1,51 +1,47 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { useHttp } from '../../hooks/http.hooks';
-import { useHistory } from "react-router-dom";
+import React, {useEffect, useState} from 'react'
+import {useParams} from 'react-router-dom'
+import {useHttp} from '../../hooks/http.hooks';
+import {Loader} from "../Loader/Loader";
+import {FailIcon} from "../icons/Fail.icon";
+import {SuccessIcon} from "../icons/Success.icon";
 
 export default function CheckoutRes() {
-    const { id } = useParams();
-    const { request, loading } = useHttp();
-    const [data, setData] = useState({})
-    let history = useHistory();
+  const {id} = useParams();
+  const {request, loading} = useHttp();
+  const [data, setData] = useState({});
 
-    useEffect(async () => {
-        try {
-            const temp = await request(`/api/checkout/GetPaymentDetails/${id}`, 'POST');
-            setData(temp);
-            if (temp.ResponseCode === '00') {
-                history.push(`/receipt/${temp.OrderID}`);
-            } else {
-                history.push('/checkout/reject');
-            }
-        } catch (e) {
-            history.push('/checkout/reject');
-        }
-    }, []);
 
-    if (loading) {
-        return (
-            <div></div>
-        )
-    }
+  useEffect(() => {
+    request(`/api/checkout/GetPaymentDetails/${id}`, 'POST').then((response) => {
+      setData(response)
+    });
+  }, [id, request]);
 
-    if (data.ResponseCode === '00') {
-        return (
-            <div className='mgt-50'>
-                <p>Success! Check your email for details</p>
-                <p>Amount: {data.Amount}</p>
-                <p>Approved Amount: {data.ApprovedAmount}</p>
-                <p>Currency: {data.Currency}</p>
-            </div>
-        )
-    }
 
+  if (loading)
+    return <Loader/>
+
+
+  if (data.ResponseCode === '00') {
     return (
-        <div className='mgt-50'>
-            <p>Reject!</p>
-            <p>Amount: {data.Amount}</p>
-            <p>Approved Amount: {data.ApprovedAmount}</p>
-            <p>Currency: {data.Currency}</p>
-        </div>
+      <div className='mgt-50'>
+        <SuccessIcon/>
+        <p>Dear {data.ClientName}</p>
+
+        <p>Your payment was <span style={{fontWeight: 900}}>approved</span></p>
+        <p>For details check your email</p>
+      </div>
     )
+  }
+
+  return (
+    <div className='mgt-50'>
+      <FailIcon/>
+      <p>Dear {data.ClientName}</p>
+      <p>Your payment wasn{"'"}t confirmed</p>
+      <p>Please try again</p>
+    </div>
+  )
 }
+
+

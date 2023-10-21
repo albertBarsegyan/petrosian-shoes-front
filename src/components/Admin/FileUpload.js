@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Progress from './Progress';
 import axios from 'axios';
-import { Upload, Modal } from 'antd';
-import { PlusOutlined } from '@ant-design/icons';
+import {Modal, Upload} from 'antd';
+import {PlusOutlined} from '@ant-design/icons';
 
 function getBase64(file) {
   return new Promise((resolve, reject) => {
@@ -55,15 +55,17 @@ export const UploadPic = (props) => {
     }
   }
 
-  const handleChange = ({ fileList }) => setFileList(fileList);
+  const handleChange = ({fileList}) => setFileList(fileList);
 
 
   const uploadButton = !isUploaded ? (
     <div>
-      <PlusOutlined />
-      <div style={{ marginTop: 8 }}>Upload</div>
+      <PlusOutlined/>
+      <div style={{marginTop: 8}}>Upload</div>
     </div>
   ) : '';
+
+
   return (
     <React.Fragment>
       <Upload
@@ -82,7 +84,7 @@ export const UploadPic = (props) => {
         footer={null}
         onCancel={handleCancel}
       >
-        <img alt="example" style={{ width: '100%' }} src={previewImage} />
+        <img alt="example" style={{width: '100%'}} src={previewImage}/>
       </Modal>
     </React.Fragment>
   );
@@ -140,7 +142,7 @@ const FileUpload = (props) => {
         />
       </div>
 
-      <Progress percentage={uploadPercentage} />
+      <Progress percentage={uploadPercentage}/>
       {file &&
         <input
           type='submit'
@@ -198,7 +200,7 @@ export const FileUploadSlides = (props) => {
         />
       </div>
 
-      <Progress percentage={uploadPercentage} />
+      <Progress percentage={uploadPercentage}/>
       {file &&
         <input
           type='submit'
@@ -209,7 +211,6 @@ export const FileUploadSlides = (props) => {
     </form>
   );
 };
-
 
 
 export default FileUpload;
