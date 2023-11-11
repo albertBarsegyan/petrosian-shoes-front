@@ -96,7 +96,7 @@
 .create-button {
     margin: 50px 0 70px !important;
     font-size: 20px;
-    background-color: darkgreen!important;
+    background-color: darkgreen !important;
     padding: 15px 0 !important;
 }
 
@@ -220,13 +220,13 @@
 
 /* On mouse-over, add a grey background color */
 
-.checkbox-container:hover input~.checkmark {
+.checkbox-container:hover input ~ .checkmark {
     background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
 
-.checkbox-container input:checked~.checkmark {
+.checkbox-container input:checked ~ .checkmark {
     background-color: #2196F3;
 }
 
@@ -240,7 +240,7 @@
 
 /* Show the checkmark when checked */
 
-.checkbox-container input:checked~.checkmark:after {
+.checkbox-container input:checked ~ .checkmark:after {
     display: block;
 }
 
@@ -288,6 +288,7 @@
     text-align: center;
 }
 
+
 .subscribe-email-card {
     background-color: rgba(126, 126, 126, 0.507);
     min-width: 300px;
@@ -298,7 +299,7 @@
 .subscribe-purchase-card {
     background-color: rgba(126, 126, 126, 0.507);
     width: 100%;
-    padding: 20px 5px 20px 15px;
+    padding: 32px 64px;
     margin: 0 20px 10px;
 }
 
@@ -317,11 +318,17 @@
 .purchase-cart-cont {
     display: flex;
     flex-wrap: wrap;
+    margin: 16px 0;
+    gap: 16px;
 }
 
 .purchase-cart-item {
     padding: 3px;
-    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    color: #111;
+    width: 100%;
+    max-width: 250px;
 }
 
 .min-card {
@@ -333,8 +340,10 @@
 }
 
 .payed-purchase-bg {
-    background-color: rgba(20, 65, 187, 0.8);
+    background-color: #5A6868;
     color: white;
+    border-radius: 16px;
+    margin-bottom: 48px;
 }
 
 .shipping-purchase-bg {
@@ -342,7 +351,7 @@
 }
 
 .shipping-key-input {
-    display: flex;
+
 }
 
 .shipping-key-input label {
@@ -358,11 +367,12 @@
     background-color: rgb(94, 165, 94);
     border: 1px rgba(0, 0, 0, 0.1) solid;
     color: white;
-    width: -webkit-fill-available;
+    width: max-content;
     max-width: 200px;
     cursor: pointer;
     font-size: 18px;
-    margin-left: 20px;
+    padding: 16px 32px;
+    border-radius: 8px;
 }
 
 .admin-edit-but-cont input[type="submit"] {
