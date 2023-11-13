@@ -1,0 +1,10 @@
+.inputsWrapper {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+.separator {
+    width: 100%;
+    border-top: 1px solid white
+}
