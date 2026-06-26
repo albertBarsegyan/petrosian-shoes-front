@@ -18,7 +18,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build
+      - run: echo "CI=false" && npm run build
 
       - name: Clean old client
         uses: appleboy/ssh-action@v1.2.0
