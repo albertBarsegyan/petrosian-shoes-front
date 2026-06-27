@@ -47,7 +47,7 @@ jobs:
           username: ec2-user
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "upload/*"
-          target: "/home/ec2-user/petrossian_shoes_fullstack/client"
+          target: "/home/ec2-user/petrossian_shoes_fullstack/client/build"
 
       - name: Restart backend
         uses: appleboy/ssh-action@v1.2.0
